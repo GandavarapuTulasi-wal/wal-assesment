@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="=utf-8" />
+  <title>Challenge 1</title>
+</head>
+<html>
+  <body>
+    <h1>Open console to see the output</h1>
+    <script>
+      const employeesArray = [100, 500, 700, 400];
+      const percent = prompt('Enter the Percent');
+      function updateSalaries(employeesArray, percent) {
+        let updateArray = employeesArray.map(function (val) {
+          return val + parseInt(percent);
+        });
+        return updateArray;
+      }
+      console.log(updateSalaries(employeesArray, percent));
+    </script>
+  </body>
+</html>

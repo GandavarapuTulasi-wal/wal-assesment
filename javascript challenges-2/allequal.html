@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="=utf-8" />
+  <title>Challenge 2</title>
+</head>
+<html>
+  <body>
+    <h1>Open console to see the output</h1>
+    <script>
+      function araAllEqual(arr) {
+        count = 0;
+        let result = arr.every((value) => value == arr[0]);
+        return result;
+      }
+      let arr1 = ['test', 'test', 'test'];
+      console.log(araAllEqual(arr1));
+      let arr2 = [1, 1, 1, 2];
+      console.log(araAllEqual(arr2));
+    </script>
+  </body>
+</html>

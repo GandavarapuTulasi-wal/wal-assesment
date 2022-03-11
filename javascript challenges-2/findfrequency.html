@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="=utf-8" />
+  <title>Challenge 1</title>
+</head>
+<html>
+  <body>
+    <h1>Open console to see the output</h1>
+    <script>
+      function findFreq(str, char) {
+        count = 0;
+        for (let i in str1) {
+          let lowerValues = str[i].toLowerCase();
+          if (lowerValues == char) {
+            count += 1;
+          }
+        }
+        return count;
+      }
+      let str1 = 'How many times does the character in this sentence?';
+      let char1 = 'm';
+      console.log(findFreq(str1, char1));
+      let char2 = 'h';
+      console.log(findFreq(str1, char2));
+    </script>
+  </body>
+</html>
