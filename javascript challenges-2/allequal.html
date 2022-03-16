@@ -8,13 +8,20 @@
     <h1>Open console to see the output</h1>
     <script>
       function araAllEqual(arr) {
-        count = 0;
-        let result = arr.every((value) => value == arr[0]);
-        return result;
+        const firstElement=arr[0]
+        let equal=false;
+        for(const i in arr){
+        if(arr[i]!==firstElement){
+            equal=false;
+            break;
+         }
+         equal=true; 
+        }
+        return equal
       }
-      let arr1 = ['test', 'test', 'test'];
+      const arr1 = ['test', 'test', 'test'];
       console.log(araAllEqual(arr1));
-      let arr2 = [1, 1, 1, 2];
+      const arr2 = [1, 1, 1, 2];
       console.log(araAllEqual(arr2));
     </script>
   </body>

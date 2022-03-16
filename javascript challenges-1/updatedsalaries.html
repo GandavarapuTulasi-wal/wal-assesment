@@ -8,10 +8,10 @@
     <h1>Open console to see the output</h1>
     <script>
       const employeesArray = [100, 500, 700, 400];
-      const percent = prompt('Enter the Percent');
+      const percent = 10;
       function updateSalaries(employeesArray, percent) {
-        let updateArray = employeesArray.map(function (val) {
-          return val + parseInt(percent);
+        const updateArray = employeesArray.map(function (val) {
+          return val+val*percent/100;
         });
         return updateArray;
       }
